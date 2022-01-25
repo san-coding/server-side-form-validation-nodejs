@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+
+        <h1>Add new employee</h1>
+
+        </head>
+    <body>
+
+<div class="container">
+    <form id="employeeForm" name="employeeForm"  action="http://localhost:9000" method="post">
+        <div class="row">
+            <div class="col-25">
+              <label for="eID">Employee Id</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="employeeId" name="employeeId" placeholder="employee id ..">
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="eName">Employee Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="employeeName" name="employeeName" placeholder="name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="eID">Qualification</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="employeeQualification" name="employeeQualification" placeholder="qualification">
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="employeeDesignation">Designation</label>
+        </div>
+        <div class="col-75">
+          <select id="employeeDesignation" name="employeeDesignation">
+            <option value="SalesBoy">SalesBoy</option>
+            <option value="Manager">Manager</option>
+            <option value="CEO">CEO</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="employeeSalary">Salary</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="employeeSalary" name="employeeSalary" placeholder="employee salary..">
+        </div>
+      </div>
+      <br>
+      <div class="col-75">
+        <input type="submit" id="addBtn" value="Add Record" >
+      </div>
+      <div class="col-80">
+        <input id="exitBtn" type="button" value="Exit" onclick="clearForm()">
+      </div>
+  
+    </form>
+  </div>
+
+</body>
+</html>
